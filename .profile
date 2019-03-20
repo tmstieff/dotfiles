@@ -10,4 +10,4 @@ export RUST_SRC_PATH=/home/taylor/.rustup/toolchains/nightly-x86_64-unknown-linu
 export PATH="$HOME/.npm-global/bin:$HOME/.cargo/bin:$PATH:/root/.gem/ruby/2.5.0/bin:$HOME/Programs/spotifyd/target/release:$HOME/Go/bin"
 
 export _JAVA_AWT_WM_NONREPARENTING=1
-
+export GDK_BACKEND=wayland
