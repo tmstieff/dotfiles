@@ -1,0 +1,105 @@
+* {
+    border: none;
+    border-radius: 0;
+    font-family: "Roboto Mono for Powerline", Helvetica, Arial, sans-serif;
+    font-size: 10px;
+    min-height: 0;
+}
+
+window#waybar {
+    background: rgba(43, 48, 59, 0.5);
+    border-bottom: 3px solid rgba(100, 114, 125, 0.5);
+    color: white;
+}
+
+#scrap {
+    border-bottom: 4px solid transparent;
+}
+
+#workspaces button {
+    margin: 0 10px 0px 0;
+    padding: 0 5px;
+    background: rgba(43, 48, 59, 1);
+    color: white;
+    box-shadow: 5px 0px 10px #000;
+    border-bottom: 3px solid rgba(100, 114, 125, 1);
+}
+
+#workspaces button.focused {
+    margin: 0 10px 0px 0;
+    border-bottom: 3px solid white;
+    box-shadow: 0px 0px 0px #000;
+}
+
+#mode, #clock, #battery, #cpu, #memory, #backlight, #network, #pulseaudio, #idle_inhibitor, #tray {
+    background: rgba(23, 28, 29, 0.9);
+    padding: 0 10px;
+    margin: 0 5px 0px 5px;
+}
+
+#mode {
+    background: #64727D;
+    border-bottom: 3px solid white;
+}
+
+#tray {
+    border-bottom: 3px solid white;
+}
+
+#clock {
+    border-bottom: 3px solid #64727D;
+}
+
+#battery {
+    border-bottom: 3px solid #ffffff;
+}
+
+#battery.charging {
+    color: white;
+    background-color: #26A65B;
+}
+
+@keyframes blink {
+    to {
+        background-color: #ffffff;
+        color: black;
+    }
+}
+
+#battery.warning:not(.charging) {
+    background: #f53c3c;
+    color: white;
+    animation-name: blink;
+    animation-duration: 0.5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+#cpu {
+    border-bottom: 3px solid #ffffff;
+}
+
+#memory {
+    border-bottom: 3px solid #ffffff;
+}
+
+#backlight {
+    border-bottom: 3px solid #ffffff;
+}
+
+#backlight {
+    border-bottom: 3px solid #ffffff;
+}
+
+#network {
+    border-bottom: 3px solid #ffffff;
+}
+
+#pulseaudio {
+    border-bottom: 3px solid #ffffff;
+}
+
+#idle_inhibitor {
+    border-bottom: 3px solid #ffffff;
+}

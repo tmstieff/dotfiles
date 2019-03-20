@@ -1,0 +1,7 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =5
+let g:netrw_dirhist_1='/home/taylor/.config/fish/conf.d'
+let g:netrw_dirhist_2='/home/taylor/Projects/heaven-reporting/build'
+let g:netrw_dirhist_3='/home/taylor/.zim'
+let g:netrw_dirhist_4='/home/taylor/.java/.userPrefs/jetbrains'
+let g:netrw_dirhist_5='/home/taylor/Projects/heaven-web/src/Heaven/WebsiteBundle/Services/Employee'

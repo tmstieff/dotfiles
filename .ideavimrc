@@ -1,0 +1,51 @@
+let mapleader = " "
+
+set clipboard+=unnamed
+
+set surround
+set scrolloff=5
+noremap <Space>r :action ReformatCode<CR>
+
+" Just to beginning and end of lines easier. From http://vimbits.com/bits/16
+noremap H ^
+noremap L $
+
+noremap J :action VimMotionScrollHalfPageDown<cr>
+noremap K :action VimMotionScrollHalfPageUp<cr>
+
+noremap <Space>wl <c-w>l
+noremap <Space>wh <c-w>h
+noremap <Space>wj <c-w>j
+noremap <Space>wk <c-w>k
+noremap <Space>wv <c-w>v
+noremap <Space>ws <c-w>s
+
+nnoremap <space>wd :action CloseContent<cr>
+nnoremap <space>Q :action ReopenClosedTab<cr>
+nnoremap <space>e :action SearchEverywhere<cr>
+nnoremap <space>E :action GotoClass<cr>
+nnoremap <space>T :action GotoSymbol<cr>
+nnoremap <space>a :action GotoAction<cr>
+nnoremap <space>b :action ToggleLineBreakpoint<cr>
+
+nnoremap <space>bn :action VimMotionNextTab<cr>
+nnoremap <space>bp :action VimMotionPreviousTabPreviousttEditorTab<cr>
+
+nnoremap <space>rr :action RenameElement<cr>
+
+nnoremap <space>] :action GotoImplementation<cr>
+nnoremap <space>[ :action GotoSuperMethod<cr>
+nnoremap <space>u :action FindUsages<cr>
+nnoremap <space>gt :action GotoTest<cr>
+nnoremap <space>k :action HighlightUsagesInFile<cr>
+
+nnoremap <space>p :action Back<cr>
+nnoremap <space>n :action Forward<cr>
+
+
+" built-in navigation to navigated items works better
+nnoremap <c-o> :action Back<cr>
+nnoremap <c-i> :action Forward<cr>
+" but preserve ideavim defaults
+nnoremap g<c-o> <c-o>
+nnoremap g<c-i> <c-i>
